@@ -39,21 +39,13 @@ background-color:#FFF;
  color:#336600;
 }
 </style>
-
-
-<title>web search engine </title>
-<?php 
-	
-
-?>
-
+<title>web search engine</title>
 </head>
 
 <body>
 
-
-
 <h1>Food Engine</h1>
+
 <div id="fm">
 
 <p>
@@ -62,28 +54,26 @@ background-color:#FFF;
 
 <div id="searchform">
 <p>
-<input type="radio" id="1" name="smethod" value="byrecipe" checked="checked">search by recipe name
-<input type="radio" id="1" name="smethod" value="byingredient" onclick="rd()">search by ingredients
+<input type="radio" id="1" name="smethod" value="byrecipe" checked="checked" onclick="rd()">search by recipe name
+<input type="radio" id="1" name="smethod" value="byingredient" checked="checked">search by ingredients
 </p>
 
 <script type="text/javascript"></script>
 <?php 
 	echo "<script type='text/javascript'>";
 	echo "function rd(){";	
-	echo "location.href='/WebSearchEngine/index1.php'";
+	echo "location.href='/WebSearchEngine/index.php'";
 	echo "}";
 	echo "</script>";
 	
 ?>
 
-<form name="form1"  action="result.php" method="post">
-<input type="text" name="input" size="20" maxlength="300" id="search" class="input_text">
-<!--  
-<p>
-<input type="radio" name="smethod" value="byrecipe" checked="checked">search by recipe name
-<input type="radio" name="smethod" value="byingredient" onclick="">search by ingredients
-</p>
--->
+<form name="form1"  action="result1.php" method="post">
+
+<p><input type="text" name="input1" size="20" maxlength="300" id="search" class="input_text"></p>
+<p><input type="text" name="input2" size="20" maxlength="300" id="search" class="input_text"></p>
+<p><input type="text" name="input3" size="20" maxlength="300" id="search" class="input_text"></p>
+<p><input type="text" name="input4" size="20" maxlength="300" id="search" class="input_text"></p>
 <p>
 <input type="submit" value="search" class="input_submit">
 &nbsp;&nbsp;
@@ -94,15 +84,8 @@ background-color:#FFF;
 
 </div>
 
-<div>
-
 
 </div>
-
-
-</div>
-
-
 
 </body>
 <br>
